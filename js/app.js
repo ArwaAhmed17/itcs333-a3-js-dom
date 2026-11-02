@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let count = 0;
 
     items.forEach(function(li) {
-      const completed = li.classList.contains('Completed');
+      const completed = li.classList.contains('completed');
       
       if (!completed) {
         count++;
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (deleteBtn) {
       li.remove();
     } else {
-      li.classList.toggle('Completed');
+      li.classList.toggle('completed');
     }
 
     updateView();
